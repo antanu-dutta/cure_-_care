@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Cure & Care</title>
+    <!-- ? Flowbite javascript cdn link -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <!-- ? Flowbite css cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ? Fontawesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ? animate css cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- ? custom css link -->
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-700">
+    <!-- Header Section -->
+    <header class="p-3 bg-gray-50 shadow-md mb-6">
+      <!-- Top Contact Section -->
+      <div
+        class="flex flex-wrap items-center justify-center gap-6 mb-4 md:justify-between md:px-16"
+      >
+        <div
+          class="py-2 px-3 bg-green-500 text-white rounded duration-500 hover:bg-green-600 flex items-center gap-2"
+        >
+          <i class="fa-regular fa-envelope"></i>
+          <a
+            href="mailto:contact@indianhealthguru.com"
+            class="text-sm md:text-base"
+          >
+            contact@indianhealthguru.com
+          </a>
+        </div>
+        <div
+          class="py-2 px-3 bg-purple-500 rounded text-white duration-500 hover:bg-purple-600 flex items-center gap-2"
+        >
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+919371136499" class="text-sm md:text-base"
+            >93371136499</a
+          >
+        </div>
+      </div>
+      <!-- Top Contact Section Ends -->
+
+      <!-- Navigation Section -->
+      <div class="animate__animated animate__fadeIn">
+        <nav class="flex items-center justify-between px-4 md:px-16 py-6">
+          <!-- Logo Section -->
+          <div class="flex items-center gap-5">
+            <div
+              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px] rounded-full bg-green-700 flex items-center justify-center text-white text-xl md:text-3xl"
+            >
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <span class="text-xl md:text-4xl font-bold text-green-700">
+              Cure & Care
+            </span>
+          </div>
+
+          <!-- Hamburger Menu (Mobile) -->
+          <div class="block md:hidden">
+            <button id="menuToggle" class="text-2xl text-green-700">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <!-- Desktop Nav Links -->
+          <ul class="hidden md:flex items-center gap-7">
+            <li class="text-green-700 font-semibold">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="font-semibold">
+              <a href="about.html">About</a>
+            </li>
+            <li class="font-semibold">
+              <a href="service.html">Service</a>
+            </li>
+            <li class="font-semibold">
+              <a href="contact.html">Contact</a>
+            </li>
+            <li class="text-xl cursor-pointer">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li>
+              <a href="appointment.html">
+                <button
+                  type="button"
+                  class="bg-green-700 px-5 py-3 hover:bg-green-800 text-white duration-300 rounded"
+                >
+                  Appointment
+                </button></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navigation Section Ends -->
+
+      <!-- Full-Screen Overlay Menu -->
+      <div
+        id="fullMenu"
+        class="fixed inset-0 bg-white hidden flex-col items-center justify-center gap-8 text-2xl p-7 z-50 transition-all duration-500"
+      >
+        <div class="flex items-center justify-between mb-10">
+          <span class="text-3xl font-bold">Menu</span>
+          <button id="menuClose" class="text-3xl">
+            <i class="fa-solid fa-times"></i>
+          </button>
+        </div>
+        <ul class="flex flex-col gap-6">
+          <li class="p-3 border border-b-gray-800">
+            <a href="index.html" class="hover:text-green-400">Home</a>
+          </li>
+
+          <li class="p-3 border border-b-gray-800">
+            <a href="about.html" class="hover:text-green-400">About</a>
+          </li>
+          <li class="p-3 border border-b-gray-800">
+            <a href="service.html" class="hover:text-green-400">Service</a>
+          </li>
+          <li class="p-3 border border-b-gray-800">
+            <a href="contact.html" class="hover:text-green-400">Contact</a>
+          </li>
+        </ul>
+        <div class="mt-10">
+          <a href="appointment.html">
+            <button
+              type="button"
+              class="bg-green-700 px-5 py-3 hover:bg-green-800 text-white duration-300 rounded"
+            >
+              Appointment
+            </button></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto">
+      <!-- Breadcrum starts here -->
+      <section class="bg-gray-100 py-2">
+        <div class="px-4">
+          <ul class="flex items-center space-x-2 text-sm text-gray-600">
+            <li><a href="index.html" class="hover:text-teal-600">Home</a></li>
+            <li>&raquo;</li>
+            <li class="text-teal-600">About</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Breadcrum ends here -->
+
+      <!-- About Section Heading  Starts Here -->
+      <section class="py-10">
+        <div class="x-auto px-4">
+          <h1 class="text-6xl mb-6 font-bold text-center">About Us</h1>
+          <p class="mt-2 text-center font-semibold">
+            Get to know more about Cure & Care Consultants and our journey in
+            Health Tourism.
+          </p>
+        </div>
+      </section>
+      <!-- About Section Heading  Ends Here -->
+
+      <!-- About Section -->
+      <section class="py-10">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-4 text-teal-600">Who We Are</h2>
+          <p class="mb-4">
+            <strong>Cure & Care Consultants</strong> are experts in "Health
+            Tourism," providing consultancy to foreign patients looking for
+            treatment options in India. We have been in this field for over half
+            a decade and have assisted more than 500 patients from 15+
+            countries, including the USA, UK, Spain, and others. Our services
+            aim to make quality healthcare in India affordable and accessible
+            for all.
+          </p>
+          <p class="mb-4">
+            With India's growing prominence in the medical and tourism sectors,
+            we aim to make the country the hub of Medical Tourism by offering
+            top-notch services tailored to patient needs.
+          </p>
+        </div>
+      </section>
+
+      <!-- Our Specializations -->
+      <section class="bg-gray-100 py-10">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-4 text-teal-600">Our Expertise</h2>
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <h3 class="font-semibold text-lg text-teal-500 mb-2">
+                Skilled Surgeons
+              </h3>
+              <p>
+                We work with the best surgeons in fields such as Cosmetic
+                Surgery, Obesity Surgery, Spine Surgery, Urology Surgery, Dental
+                Treatments, and Cancer Management.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg text-teal-500 mb-2">
+                World-Class Facilities
+              </h3>
+              <p>
+                Our partner hospitals and centers specialize in Ophthalmology,
+                Cardiology, Dermatology, Orthopedic Surgery, Ayurveda, and more.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg text-teal-500 mb-2">
+                Affordable Healthcare
+              </h3>
+              <p>
+                We ensure that medical care remains affordable, offering
+                significant cost savings compared to other countries without
+                compromising quality.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg text-teal-500 mb-2">
+                Patient-Centric Approach
+              </h3>
+              <p>
+                We follow the ethos of "Atithi Devo Bhava" (Guest is God),
+                ensuring every patient receives warmth and respect.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="py-10">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-4 text-teal-600">Why Choose Us</h2>
+          <ul class="list-disc list-inside space-y-3">
+            <li>
+              Comprehensive assistance, including medical visas, accommodation,
+              and travel arrangements.
+            </li>
+            <li>
+              Trusted by medical professionals and renowned hospitals worldwide.
+            </li>
+            <li>
+              Exclusive partnerships with specialized centers for holistic
+              healthcare.
+            </li>
+            <li>
+              Expert guidance for international patients seeking the best care
+              in India.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="bg-gray-100 py-10">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-6 text-teal-600">
+            What Our Patients Say
+          </h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <blockquote class="p-4 bg-white rounded-lg shadow">
+              <p class="text-gray-600 italic">
+                "The team atCure & Caremade my medical trip seamless and
+                stress-free. I highly recommend their services!"
+              </p>
+              <cite class="block mt-2 text-teal-600 font-bold"
+                >- John Doe, USA</cite
+              >
+            </blockquote>
+            <blockquote class="p-4 bg-white rounded-lg shadow">
+              <p class="text-gray-600 italic">
+                "Affordable healthcare with top-notch doctors. The hospitality
+                was amazing. Thank you for everything!"
+              </p>
+              <cite class="block mt-2 text-teal-600 font-bold"
+                >- Maria Gonzalez, Spain</cite
+              >
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Us Section -->
+      <section class="py-10">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-4 text-teal-600">Get in Touch</h2>
+          <p class="mb-4">
+            Have questions or need assistance? Reach out to us, and our team
+            will be happy to help.
+          </p>
+          <a
+            href="contact.html"
+            class="inline-block bg-teal-600 text-white py-2 px-4 rounded hover:bg-teal-700"
+            >Contact Us</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-teal-600 text-white py-6">
+      <div class="max-w-5xl mx-auto px-4">
+        <p class="text-center">
+          &copy; 2024Cure & CareConsultants. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

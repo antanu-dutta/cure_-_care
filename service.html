@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services | Cure & Care</title>
+    <!-- ? Flowbite javascript cdn link -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <!-- ? Flowbite css cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ? Fontawesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ? animate css cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- ? custom css link -->
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <!-- Header Section Starts Here -->
+    <header class="p-3 bg-gray-50 shadow-md mb-6">
+      <!-- Top Contact Section -->
+      <div
+        class="flex flex-wrap items-center justify-center gap-6 mb-4 md:justify-between md:px-16"
+      >
+        <div
+          class="py-2 px-3 bg-green-500 text-white rounded duration-500 hover:bg-green-600 flex items-center gap-2"
+        >
+          <i class="fa-regular fa-envelope"></i>
+          <a
+            href="mailto:contact@indianhealthguru.com"
+            class="text-sm md:text-base"
+          >
+            contact@indianhealthguru.com
+          </a>
+        </div>
+        <div
+          class="py-2 px-3 bg-purple-500 rounded text-white duration-500 hover:bg-purple-600 flex items-center gap-2"
+        >
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+919371136499" class="text-sm md:text-base"
+            >93371136499</a
+          >
+        </div>
+      </div>
+      <!-- Top Contact Section Ends -->
+
+      <!-- Navigation Section -->
+      <div class="animate__animated animate__fadeIn">
+        <nav class="flex items-center justify-between px-4 md:px-16 py-6">
+          <!-- Logo Section -->
+          <div class="flex items-center gap-5">
+            <div
+              class="w-[50px] h-[50px] md:w-[75px] md:h-[75px] rounded-full bg-green-700 flex items-center justify-center text-white text-xl md:text-3xl"
+            >
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <span class="text-xl md:text-4xl font-bold text-green-700">
+              Cure & Care
+            </span>
+          </div>
+
+          <!-- Hamburger Menu (Mobile) -->
+          <div class="block md:hidden">
+            <button id="menuToggle" class="text-2xl text-green-700">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <!-- Desktop Nav Links -->
+          <ul class="hidden md:flex items-center gap-7">
+            <li class="text-green-700 font-semibold">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="font-semibold">
+              <a href="about.html">About</a>
+            </li>
+            <li class="font-semibold">
+              <a href="service.html">Service</a>
+            </li>
+            <li class="font-semibold">
+              <a href="contact.html">Contact</a>
+            </li>
+            <li class="text-xl cursor-pointer">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="bg-green-700 px-5 py-3 hover:bg-green-800 text-white duration-300 rounded"
+              >
+                Appointment
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navigation Section Ends -->
+
+      <!-- Full-Screen Overlay Menu -->
+      <div
+        id="fullMenu"
+        class="fixed inset-0 bg-white hidden flex-col items-center justify-center gap-8 text-2xl p-7 z-50 transition-all duration-500"
+      >
+        <div class="flex items-center justify-between mb-10">
+          <span class="text-3xl font-bold">Menu</span>
+          <button id="menuClose" class="text-3xl">
+            <i class="fa-solid fa-times"></i>
+          </button>
+        </div>
+        <ul class="flex flex-col gap-6">
+          <li class="p-3 border border-b-gray-800">
+            <a href="index.html" class="hover:text-green-400">Home</a>
+          </li>
+
+          <li class="p-3 border border-b-gray-800">
+            <a href="about.html" class="hover:text-green-400">About</a>
+          </li>
+          <li class="p-3 border border-b-gray-800">
+            <a href="service.html" class="hover:text-green-400">Service</a>
+          </li>
+          <li class="p-3 border border-b-gray-800">
+            <a href="contact.html" class="hover:text-green-400">Contact</a>
+          </li>
+        </ul>
+        <div class="mt-10">
+          <button
+            type="button"
+            class="bg-green-700 px-5 py-3 hover:bg-green-800 text-white duration-300 rounded"
+          >
+            Appointment
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section Ends Here -->
+
+    <main class="max-w-7xl mx-auto">
+      <!-- Breadcrum starts here -->
+      <section class="bg-gray-100 py-2">
+        <div class="px-4">
+          <ul class="flex items-center space-x-2 text-sm text-gray-600">
+            <li><a href="index.html" class="hover:text-teal-600">Home</a></li>
+            <li>&raquo;</li>
+            <li class="text-teal-600">Services</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Breadcrum ends here -->
+
+      <section class="py-10">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-6 text-teal-600">What We Offer</h2>
+          <ul class="space-y-6">
+            <li class="flex items-start">
+              <div class="text-teal-600 mt-1 mr-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <p>
+                <strong>Tailored Medical Packages:</strong> We create flexible
+                treatment plans designed to meet the unique needs and
+                preferences of each patient.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <div class="text-teal-600 mt-1 mr-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <p>
+                <strong>Comprehensive Travel Assistance:</strong> We handle
+                everything from booking flights and securing accommodations to
+                organizing visas for your medical journey.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <div class="text-teal-600 mt-1 mr-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <p>
+                <strong>Expert Coordination:</strong> We act as a bridge between
+                you and your doctors, ensuring smooth correspondence and care.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <div class="text-teal-600 mt-1 mr-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <p>
+                <strong>24/7 Support Line:</strong> Our team is available around
+                the clock to assist your family and friends while you receive
+                treatment.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <div class="text-teal-600 mt-1 mr-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <p>
+                <strong>Access to Advanced Medical Facilities:</strong> Get the
+                best care using cutting-edge technologies at leading hospitals
+                and institutions.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <div class="text-teal-600 mt-1 mr-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <p>
+                <strong>No Wait Times:</strong> Avoid delays and receive timely
+                treatment with our streamlined processes.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <div class="text-teal-600 mt-1 mr-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <p>
+                <strong>Cost-Effective Solutions:</strong> Benefit from
+                substantial savings compared to private healthcare in Western
+                countries.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <div class="text-teal-600 mt-1 mr-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <p>
+                <strong>High-Quality Services:</strong> Enjoy a personalized and
+                professional approach to every aspect of your treatment journey.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <div class="text-teal-600 mt-1 mr-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <p>
+                <strong>Travel and Visa Assistance:</strong> We arrange flights,
+                accommodations, and medical visas to make your journey
+                hassle-free.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <div class="text-teal-600 mt-1 mr-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <p>
+                <strong>Multilingual Support:</strong> Our team provides
+                interpreters for major languages, ensuring effective
+                communication with doctors and staff.
+              </p>
+            </li>
+            <li class="flex items-start">
+              <div class="text-teal-600 mt-1 mr-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <p>
+                <strong>Access to Specialists:</strong> We connect you to
+                leading doctors and state-of-the-art hospitals specializing in
+                various fields, from cardiology to cosmetic surgery.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Testimonials Section starts here -->
+      <section class="bg-gray-100 py-10">
+        <div class="max-w-5xl mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-6 text-teal-600">
+            What Our Clients Say
+          </h2>
+          <div class="space-y-6">
+            <blockquote
+              class="p-4 border-l-4 border-teal-600 bg-white rounded shadow"
+            >
+              <p class="text-gray-700">
+                "Indian Health Guru Consultants made my medical journey in India
+                stress-free and seamless. Their team was with me every step of
+                the way."
+              </p>
+              <footer class="mt-2 text-sm text-gray-500">
+                - John Smith, UK
+              </footer>
+            </blockquote>
+            <blockquote
+              class="p-4 border-l-4 border-teal-600 bg-white rounded shadow"
+            >
+              <p class="text-gray-700">
+                "From booking my surgery to arranging post-treatment travel,
+                they handled everything with professionalism and care."
+              </p>
+              <footer class="mt-2 text-sm text-gray-500">
+                - Maria Gonzalez, Spain
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials Section ends shere -->
+
+      <!-- call to start section starts here -->
+      <section class="bg-teal-600 text-white py-10 my-7">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+          <h2 class="text-3xl font-bold mb-4">Ready to Start Your Journey?</h2>
+          <p class="mb-6">
+            Contact us today to learn more about how we can assist you with your
+            medical and wellness needs in India.
+          </p>
+          <a
+            href="contact.html"
+            class="bg-white text-teal-600 font-semibold py-2 px-6 rounded shadow hover:bg-gray-100"
+            >Get in Touch</a
+          >
+        </div>
+      </section>
+      <!-- call to start section ends here -->
+    </main>
+
+    <!-- Footer  section starts here -->
+    <footer class="bg-teal-600 text-white py-6">
+      <div class="max-w-5xl mx-auto px-4">
+        <p class="text-center">
+          &copy; 2024Cure & CareConsultants. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- Footer  section Ends here -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
