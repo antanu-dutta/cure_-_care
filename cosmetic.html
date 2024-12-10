@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmetic Surgery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <header class="bg-blue-600 text-white">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <!-- Logo -->
+        <div class="text-2xl font-bold">Care and Cure</div>
+        <!-- Hamburger Menu -->
+        <div class="lg:hidden">
+          <button id="menuToggle" class="text-2xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <!-- Navigation Links -->
+        <nav class="space-x-8 hidden lg:block">
+          <a href="index.html" class="hover:text-gray-300">Home</a>
+          <a href="about.html" class="hover:text-gray-300">About Us</a>
+          <a href="service.html" class="hover:text-gray-300">Services</a>
+          <a href="cosmetic.html" class="hover:text-gray-300"
+            >Cosmetic Surgery</a
+          >
+          <a href="doctors.html" class="hover:text-gray-300">Our Doctors</a>
+          <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Modal -->
+      <div
+        id="mobileMenu"
+        class="fixed inset-0 bg-black bg-opacity-75 hidden flex-col items-center justify-center space-y-6 text-xl"
+      >
+        <button
+          id="closeMenu"
+          class="absolute top-6 right-6 text-2xl text-white"
+        >
+          <i class="fa-solid fa-times"></i>
+        </button>
+        <a href="index.html" class="text-white hover:text-gray-300">Home</a>
+        <a href="about.html" class="text-white hover:text-gray-300">About Us</a>
+        <a href="service.html" class="text-white hover:text-gray-300"
+          >Services</a
+        >
+        <a href="cosmetic.html" class="text-white hover:text-gray-300"
+          >Cosmetic Surgery</a
+        >
+        <a href="doctors.html" class="text-white hover:text-gray-300"
+          >Our Doctors</a
+        >
+        <a href="contact.html" class="text-white hover:text-gray-300"
+          >Contact Us</a
+        >
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="relative">
+      <img
+        src="https://lpsclinic.com/wp-content/uploads/2023/02/banner3-18.jpg.webp"
+        alt="Cosmetic Surgery Banner"
+        class="w-full h-[400px] object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+      >
+        <h2 class="text-4xl md:text-5xl text-white font-bold text-center">
+          Transform Your Confidence with Expert Cosmetic Surgery
+        </h2>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">
+          About Cosmetic Surgery
+        </h3>
+        <p class="text-gray-700 leading-7">
+          Cosmetic surgery is a specialized field of medicine aimed at enhancing
+          a person’s physical appearance. Unlike reconstructive surgery, which
+          focuses on repairing defects or injuries, cosmetic surgery is elective
+          and tailored to improve aesthetics, symmetry, and proportion. In
+          today’s world, cosmetic surgery has become a popular choice for
+          individuals looking to address their appearance concerns and improve
+          self-esteem. It is not just about beauty but about feeling confident
+          and comfortable in your own skin. Cosmetic surgery covers a wide range
+          of procedures, including surgical and non-surgical treatments, to
+          cater to different needs. From reshaping facial features, such as
+          rhinoplasty (nose job) or blepharoplasty (eyelid surgery), to body
+          contouring procedures like liposuction and tummy tucks, there are
+          numerous options available. Non-invasive procedures like Botox,
+          fillers, and laser treatments are also increasingly popular for
+          achieving youthful and glowing skin. The advancements in medical
+          technology and techniques have made cosmetic surgery safer, quicker,
+          and more effective than ever before. Most procedures now involve
+          minimal downtime and natural-looking results, allowing patients to
+          return to their normal lives sooner. By choosing cosmetic surgery,
+          individuals embark on a journey to not only enhance their appearance
+          but also to boost their self-confidence, empowering them to live life
+          to the fullest.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLllADwEgz1LRrZFD7cLDiJY-K95xPUlFPfQ&s"
+            alt="Procedure 1"
+            class="rounded-lg shadow w-full"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYK9mIXLKHytgxFqmW011stAygWYkwiAIrqQ&s"
+            alt="Procedure 2"
+            class="rounded-lg shadow w-full"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdpkOPwVGSCCk-_WlywvzoXBMcHdwKm6bSMA&s"
+            alt="Procedure 3"
+            class="rounded-lg shadow w-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Types of Cosmetic Surgery -->
+    <section id="procedures" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">
+          Types of Cosmetic Surgery
+        </h3>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Facial Surgery -->
+          <li class="shadow-xl p-4">
+            <h4 class="text-xl font-semibold text-gray-700 mb-6 text-center">
+              Facial Surgery
+            </h4>
+            <ul class="flex flex-col gap-3 list-disc pl-6">
+              <li class="text-gray-800">
+                <span class="font-bold text-black"
+                  >Rhinoplasty (Nose Surgery):
+                </span>
+                Reshapes the nose to improve symmetry, size, or function.
+              </li>
+              <li class="text-gray-800">
+                <span class="font-bold text-black">Facelifts: </span>
+                Tightens sagging skin on the face and neck to provide a more
+                youthful look.
+              </li>
+              <li class="text-gray-800">
+                <span class="font-bold text-black"
+                  >Blepharoplasty (Eyelid Surgery):
+                </span>
+                Removes excess skin or fat from the eyelids to refresh the eye
+                area.
+              </li>
+              <li class="text-gray-800">
+                <span class="font-bold text-black"
+                  >Chin and Cheek Augmentation:
+                </span>
+                Enhances facial contours for a more defined and proportional
+                look.
+              </li>
+            </ul>
+          </li>
+
+          <!-- Body Contouring -->
+          <li class="shadow-xl p-4">
+            <h4 class="text-xl font-semibold text-gray-700 mb-6 text-center">
+              Body Contouring
+            </h4>
+            <ul class="flex flex-col gap-3 list-disc pl-6">
+              <li class="text-gray-800">
+                <span class="font-bold text-black">Liposuction: </span>
+                Removes excess fat deposits from areas like the abdomen, thighs,
+                and arms.
+              </li>
+              <li class="text-gray-800">
+                <span class="font-bold text-black"
+                  >Tummy Tucks (Abdominoplasty):
+                </span>
+                Tightens loose skin and repairs abdominal muscles for a flatter
+                stomach.
+              </li>
+              <li class="text-gray-800">
+                <span class="font-bold text-black">Body Lifts: </span>
+                Improves the shape and tone of the body by removing excess skin
+                and fat.
+              </li>
+            </ul>
+          </li>
+
+          <!-- Breast Surgery -->
+          <li class="shadow-xl p-4">
+            <h4 class="text-xl font-semibold text-gray-700 mb-6 text-center">
+              Breast Surgery
+            </h4>
+            <ul class="flex flex-col gap-3 list-disc pl-6">
+              <li class="text-gray-800">
+                <span class="font-bold text-black">Breast Augmentation: </span>
+                Enhances breast size and shape using implants or fat transfer.
+              </li>
+              <li class="text-gray-800">
+                <span class="font-bold text-black">Breast Reduction: </span>
+                Reduces the size of overly large breasts for better comfort and
+                appearance.
+              </li>
+              <li class="text-gray-800">
+                <span class="font-bold text-black">Breast Lifts: </span>
+                Repositions and reshapes sagging breasts for a youthful contour.
+              </li>
+            </ul>
+          </li>
+
+          <!-- Skin Rejuvenation -->
+          <li class="shadow-xl p-4">
+            <h4 class="text-xl font-semibold text-gray-700 mb-6 text-center">
+              Skin Rejuvenation
+            </h4>
+            <ul class="flex flex-col gap-3 list-disc pl-6">
+              <li class="text-gray-800">
+                <span class="font-bold text-black"
+                  >Botox and Dermal Fillers:
+                </span>
+                Smooths wrinkles and restores volume to the face.
+              </li>
+              <li class="text-gray-800">
+                <span class="font-bold text-black">Laser Treatments: </span>
+                Reduces fine lines, acne scars, and discoloration for glowing
+                skin.
+              </li>
+              <li class="text-gray-800">
+                <span class="font-bold text-black">Chemical Peels: </span>
+                Removes damaged skin layers to reveal smoother, brighter skin.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Procedure Details -->
+    <!-- <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6">Procedure Details</h3>
+        <p class="text-gray-700 leading-7">
+          Cosmetic surgery procedures vary depending on the type of surgery
+          performed. Typically, the process involves consultations, planning,
+          and execution under expert guidance. Recovery times also vary, and
+          detailed post-surgery care ensures the best outcomes.
+        </p>
+        <div class="mt-8">
+          <img
+            src="https://via.placeholder.com/1200x500"
+            alt="Surgery Details"
+            class="rounded-lg shadow"
+          />
+        </div>
+      </div>
+    </section> -->
+    <div class="max-w-5xl mx-auto p-6">
+      <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">
+        Procedure Details
+      </h3>
+      <div class="relative border-l-4 border-blue-500">
+        <!-- Step 1: Consultation -->
+        <div class="mb-10 ml-6">
+          <div
+            class="absolute -left-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center"
+          >
+            <span class="text-white font-semibold">1</span>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">Consultation</h3>
+          <p class="text-gray-600">
+            The first step is a detailed consultation with your cosmetic
+            surgeon. During this session, your goals, medical history, and
+            concerns are discussed. The surgeon evaluates your needs and
+            recommends the most suitable procedures.
+          </p>
+        </div>
+        <!-- Step 2: Pre-Procedure Preparation -->
+        <div class="mb-10 ml-6">
+          <div
+            class="absolute -left-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center"
+          >
+            <span class="text-white font-semibold">2</span>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">
+            Pre-Procedure Preparation
+          </h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>
+              You may need to undergo routine health checks and tests before
+              surgery.
+            </li>
+            <li>
+              Your surgeon will guide you on medications to avoid, dietary
+              restrictions, and lifestyle adjustments.
+            </li>
+          </ul>
+        </div>
+        <!-- Step 3: The Surgery -->
+        <div class="mb-10 ml-6">
+          <div
+            class="absolute -left-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center"
+          >
+            <span class="text-white font-semibold">3</span>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">The Surgery</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>
+              Procedures are typically performed under local or general
+              anesthesia, depending on the type of surgery.
+            </li>
+            <li>
+              The duration of the procedure varies, ranging from a few hours for
+              minor surgeries to longer for more complex operations.
+            </li>
+            <li>
+              State-of-the-art techniques and equipment are used to ensure
+              precision and safety.
+            </li>
+          </ul>
+        </div>
+        <!-- Step 4: Post-Procedure Care -->
+        <div class="ml-6">
+          <div
+            class="absolute -left-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center"
+          >
+            <span class="text-white font-semibold">4</span>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">
+            Post-Procedure Care
+          </h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>
+              Recovery instructions will be provided, including guidance on
+              managing swelling, discomfort, and activity restrictions.
+            </li>
+            <li>
+              Follow-up appointments are crucial to monitor healing and ensure
+              optimal results.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">
+          Meet Our Expert Doctors
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="doctorContainer">
+          <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Doctor 1"
+              class="w-32 h-32 mx-auto rounded-full"
+            />
+            <h4 class="text-xl font-semibold text-center mt-4">
+              Dr. John Smith
+            </h4>
+            <p class="text-gray-600 text-center">Plastic Surgeon</p>
+          </div>
+          <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Doctor 2"
+              class="w-32 h-32 mx-auto rounded-full"
+            />
+            <h4 class="text-xl font-semibold text-center mt-4">
+              Dr. Emily Brown
+            </h4>
+            <p class="text-gray-600 text-center">Cosmetic Specialist</p>
+          </div>
+          <div class="bg-white rounded-lg shadow p-4">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Doctor 3"
+              class="w-32 h-32 mx-auto rounded-full"
+            />
+            <h4 class="text-xl font-semibold text-center mt-4">
+              Dr. Sarah Johnson
+            </h4>
+            <p class="text-gray-600 text-center">Aesthetic Surgeon</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-blue-600 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-lg">
+          Contact us at
+          <a href="mailto:info@cosmeticcare.com" class="underline"
+            >info@cosmeticcare.com</a
+          >
+        </p>
+        <p class="mt-2">&copy; 2024 CosmeticCare. All rights reserved.</p>
+      </div>
+    </footer>
+    <script type="module" src="./src/cosmetic.js"></script>
+    <script>
+      // JavaScript for handling menu toggle
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeMenu = document.getElementById("closeMenu");
+
+      // Open the modal when the menu button is clicked
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden");
+        mobileMenu.classList.add("flex");
+      });
+
+      // Close the modal when the close button is clicked
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+
+      // Close the modal when clicking outside of it (optional)
+      mobileMenu.addEventListener("click", (e) => {
+        if (e.target === mobileMenu) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>

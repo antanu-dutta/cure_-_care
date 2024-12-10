@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <!-- Logo -->
+        <div class="text-2xl font-bold">Care and Cure</div>
+        <!-- Hamburger Menu -->
+        <div class="lg:hidden">
+          <button id="menuToggle" class="text-2xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <!-- Navigation Links -->
+        <nav class="space-x-8 hidden lg:block">
+          <a href="index.html" class="hover:text-gray-300">Home</a>
+          <a href="about.html" class="hover:text-gray-300">About Us</a>
+          <a href="service.html" class="hover:text-gray-300">Services</a>
+          <a href="cosmetic.html" class="hover:text-gray-300"
+            >Cosmetic Surgery</a
+          >
+          <a href="doctors.html" class="hover:text-gray-300">Our Doctors</a>
+          <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Modal -->
+      <div
+        id="mobileMenu"
+        class="fixed inset-0 bg-black bg-opacity-75 hidden flex-col items-center justify-center space-y-6 text-xl"
+      >
+        <button
+          id="closeMenu"
+          class="absolute top-6 right-6 text-2xl text-white"
+        >
+          <i class="fa-solid fa-times"></i>
+        </button>
+        <a href="index.html" class="text-white hover:text-gray-300">Home</a>
+        <a href="about.html" class="text-white hover:text-gray-300">About Us</a>
+        <a href="service.html" class="text-white hover:text-gray-300"
+          >Services</a
+        >
+        <a href="cosmetic.html" class="text-white hover:text-gray-300"
+          >Cosmetic Surgery</a
+        >
+        <a href="doctors.html" class="text-white hover:text-gray-300"
+          >Our Doctors</a
+        >
+        <a href="contact.html" class="text-white hover:text-gray-300"
+          >Contact Us</a
+        >
+      </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+      <h2 class="text-3xl text-center font-semibold mb-4 text-gray-700">
+        Our Doctors
+      </h2>
+      <div class="flex flex-wrap items-center justify-between gap-6 my-10">
+        <!-- Filter Buttons Section -->
+        <div
+          class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-4 lg:gap-10"
+        >
+          <div
+            class="filterBtn bg-gray-600 text-white px-4 py-2 rounded text-lg text-center cursor-pointer"
+          >
+            All
+          </div>
+          <div
+            class="filterBtn bg-gray-600 text-white px-4 py-2 rounded text-lg text-center cursor-pointer"
+          >
+            Surgeon
+          </div>
+          <div
+            class="filterBtn bg-gray-600 text-white px-4 py-2 rounded text-lg text-center cursor-pointer"
+          >
+            Neurologist
+          </div>
+        </div>
+
+        <!-- Search Form Section -->
+        <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+          <form
+            id="searchForm"
+            class="w-full lg:w-auto flex items-center gap-3 px-4"
+          >
+            <input
+              type="text"
+              class="w-full lg:w-auto h-10 px-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Search By Specialization"
+            />
+            <button
+              class="bg-green-600 text-white px-3 py-2 rounded hover:bg-green-700 transition"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div
+        id="allDoctorsContainer"
+        class="grid grid-cols-1 md:grid-cols-2 gap-6"
+      ></div>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Care and Cure. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script type="module" src="./src/doctors.js"></script>
+    <script>
+      // JavaScript for handling menu toggle
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeMenu = document.getElementById("closeMenu");
+
+      // Open the modal when the menu button is clicked
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden");
+        mobileMenu.classList.add("flex");
+      });
+
+      // Close the modal when the close button is clicked
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+
+      // Close the modal when clicking outside of it (optional)
+      mobileMenu.addEventListener("click", (e) => {
+        if (e.target === mobileMenu) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
